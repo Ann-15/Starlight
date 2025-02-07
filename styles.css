@@ -1,0 +1,148 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bg2.jpg'); /* Background Image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+.bg-image{
+    width: 100%;
+}
+
+.navbar {
+    background-color: #3e99e978; /* Semi-transparent background */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #dedede;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    color: white; /* Text color for better contrast against the background image */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 6em;
+    animation: fade-in 1s ease-out forwards;
+}
+
+.tagline {
+    color: #ffffff;
+    font-size: 2em;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slide-in 1s ease-out forwards;
+}
+
+@keyframes slide-in {
+    from { opacity: 0; transform: translateX(-20px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.member {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.leader{
+    box-shadow: 0 0 10px rgb(0, 255, 115);
+}
+.member img {
+    width: 250px;
+    border-radius: 0px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.member:hover img {
+    transform: scale(1.1);
+}
+
+.member h3 {
+    margin: 10px 0;
+    color: #3e98e9;
+}
+
+.contact-info {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: #3e98e9;
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
